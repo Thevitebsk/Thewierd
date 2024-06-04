@@ -1,6 +1,4 @@
 a = 0
-global command
-command = 1
 def ad():
     global a
     a += 1
@@ -24,4 +22,3 @@ while True:
         num()
     if a >= 128:
         a = 0
-    command += 1
