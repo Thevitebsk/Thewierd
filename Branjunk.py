@@ -6,7 +6,8 @@
 #v - Sets the one memory cell to the value from the one stack memory
 #examples
 #++++++++'^+++++'v++++''+++'^'+++++++++++++++++++++++'v'+++'------'--------' - Hello World
-loat=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#++^++'++++++++++++++++'v-'+++++++++++++'----'+++++++++++'-------'---' - The esolangs name
+at=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = 0
 osm = 0
 e=[]
@@ -18,7 +19,7 @@ def m():
     ocm -= 1
 def q():
     global ocm
-    print(loat[ocm], end='')
+    print(at[ocm], end='')
 def iq():
     global ocm
     ocm = int(input("CSVAL:"))
@@ -47,7 +48,9 @@ while True:
             x()
         if c == "v" and "v" not in e:
             ix()
+    #vi have no idea why does type error appear
     print("\n")
     if a > 26:
         a = 0
+    #^i have no idea why does type error appear
     continue
