@@ -9,7 +9,7 @@ def q():
     print(a)
 def num():
     global a
-    a=int(input("ENTER YOUR NUMBER HERE:"))
+    a=int(input("number:"))
 while True:
     i = input(">>")
     if "+" in i:
