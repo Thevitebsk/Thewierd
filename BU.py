@@ -1,4 +1,5 @@
 a = 0
+e=[]
 def ad():
     global a
     a += 1
@@ -12,13 +13,15 @@ def num():
     a=int(input("number:"))
 while True:
     i = input(">>")
-    if "+" in i:
-        ad()
-    if "-" in i:
-        m()
-    if "'" in i:
-        q()
-    if "№" in i:
-        num()
-    if a >= 128:
-        a = 0
+    for char in i:
+        if char == "+" and "+" not in e:
+            ad()
+        if char == "-" and "-" not in e:
+            m()
+        if char == "'" and "'" not in e:
+            q()
+        if char == "№" and "№" not in e:
+            num()
+        if a >= 27:
+            a = 0
+        continue
