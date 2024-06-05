@@ -4,8 +4,8 @@
 #` - Gets user input and sets the 1 cell memoery to that value
 #^ - Pushes the value to the one stack memory
 #v - Sets the one memory cell to the value from the one stack memory
-#examples (that need to be rewriten)
-#++++++++'^+++++'v++++''+++'^'+++++++++++++++++++++++'v'+++'------'--------' - Hello World
+#examples
+#+++++++'^++++'v++++''+++'++++++++'--------'+++'^+++++++++++'--------' - Hello World
 #++^++'++++++++++++++++'v-'+++++++++++++'----'+++++++++++'-------'---' - The esolangs name
 at="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = 0
@@ -33,8 +33,13 @@ def ix():
     global ocm
     ocm=osm
     osm=0
+def r():
+        global osm
+        global ocm
+        osm=0
+        ocm=0
 while True:
-    i = input(">>")
+    i = input(">")
     for c in i:
         if c == "+" and "+" not in e:
             a()
@@ -48,7 +53,9 @@ while True:
             x()
         if c == "v" and "v" not in e:
             ix()
-        if ocm < 0:
+        if c == "r" and "r" not in e:
+            r()
+        if ocm < 0 or ocm > 25:
             ocm = 0
     print("\n")
     continue
