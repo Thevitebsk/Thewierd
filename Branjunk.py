@@ -6,7 +6,7 @@
 #v - Sets the one memory cell to the value from the one stack memory
 #examples
 #+++++++'^++++'v++++''+++'++++++++'--------'+++'^+++++++++++'--------' - Hello World
-#++^++'++++++++++++++++'v-'+++++++++++++'----'+++++++++++'-------'---' - The esolangs name
+#+'++++++++++++++++'^'+++++++++++++'----'v+++'-------'---' - The esolangs name
 at="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = 0
 osm = 0
