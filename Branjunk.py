@@ -4,7 +4,7 @@
 #` - Gets user input and sets the 1 cell memoery to that value
 #^ - Pushes the value to the one stack memory
 #v - Sets the one memory cell to the value from the one stack memory
-#examples
+#examples (that need to be rewriten)
 #++++++++'^+++++'v++++''+++'^'+++++++++++++++++++++++'v'+++'------'--------' - Hello World
 #++^++'++++++++++++++++'v-'+++++++++++++'----'+++++++++++'-------'---' - The esolangs name
 at="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -48,7 +48,7 @@ while True:
             x()
         if c == "v" and "v" not in e:
             ix()
-        if ocm <= -1:
+        if ocm < 0:
             ocm = 0
     print("\n")
     continue
