@@ -48,7 +48,7 @@ while True:
             x()
         if c == "v" and "v" not in e:
             ix()
-        print("\n")
         if ocm <= -1:
             ocm = 0
+    print("\n")
     continue
