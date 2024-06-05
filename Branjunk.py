@@ -7,7 +7,7 @@
 #examples
 #++++++++'^+++++'v++++''+++'^'+++++++++++++++++++++++'v'+++'------'--------' - Hello World
 #++^++'++++++++++++++++'v-'+++++++++++++'----'+++++++++++'-------'---' - The esolangs name
-at=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+at="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = 0
 osm = 0
 e=[]
@@ -48,9 +48,7 @@ while True:
             x()
         if c == "v" and "v" not in e:
             ix()
-    #vi have no idea why does type error appear
-    print("\n")
-    if a > 26:
-        a = 0
-    #^i have no idea why does type error appear
+        print("\n")
+        if ocm <= -1:
+            ocm = 0
     continue
