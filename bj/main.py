@@ -1,4 +1,3 @@
-#X++++++++'++++^+++++'v''+++'^'v++++++++'--------'+++'------'--------' - Hello World
 at=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = ""
 osm = ""
