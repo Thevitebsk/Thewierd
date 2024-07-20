@@ -1,6 +1,6 @@
 at=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = ""
-osm = ""
+ax=0
 while True:
  osm=""
  ocm=""
@@ -35,9 +35,13 @@ while True:
    ocm=osm
    osm=""
   elif c == "X":
+   ax+=1
    ocm=0
   else:
    print("X")
    break
   if ocm < 0 or ocm > 25:
    ocm = 0
+  if ax > 1:
+   print("X")
+   break
