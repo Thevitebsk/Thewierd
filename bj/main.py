@@ -1,7 +1,9 @@
-at="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+at=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = 0
 osm = ""
 while True:
+ osm=""
+ ocm=0
  for c in input("\n>"):
   if c == "+":
    ocm += 1
