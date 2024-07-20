@@ -1,12 +1,11 @@
 #+ - adds to the 1 cell memory
 #- - subtracts from the 1 cell memory
-#' - prints the 1 cell memoery value
+#' - prints the 1 cell memory value as the "at" charecter
 #` - Gets user input and sets the 1 cell memoery to that value
 #^ - Pushes the value to the one stack memory
 #v - Sets the one memory cell to the value from the one stack memory
 #examples
 #+++++++'^++++'v++++''+++'++++++++'--------'+++'^+++++++++++'--------' - Hello World
-#+'++++++++++++++++'^'+++++++++++++'----'v+++'-------'---' - The esolangs name
 at="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ocm = 0
 osm = 0
