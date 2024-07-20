@@ -23,8 +23,8 @@ while True:
   elif c == "r":
    osm=0
    ocm=0
-  elif ocm < 0 or ocm > 25:
-   ocm = 0
   else:
    print("X")
    break
+  if ocm < 0 or ocm > 25:
+   ocm = 0
