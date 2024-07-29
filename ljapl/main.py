@@ -9,9 +9,10 @@ while True:
   nc=0
   se=f"0123456789{n} abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\]`|~"
   s=[]
-  store=[]
+  b=[]
+  e=0
   out=[]
-  for c in input():
+  for c in input("code:\n"):
     nc+=1
     if c == "+":
       r=int(s[0])+int(s[1])
@@ -58,9 +59,6 @@ while True:
     elif c == "N":
       out.append(int(s[0]))
       s.pop(0)
-    elif c == "S":
-      out.append(s[0])
-      s.pop(0)
     elif c == "|":
       print("output:")
       print(out[0])
@@ -82,7 +80,7 @@ while True:
       s.append(r)
       s.pop(0)
       s.pop(0)
-    elif c == ":":
+    elif c == "=":
       s.append(s[0])
     elif c == "-":
       r=int(s[0])-int(s[1])
@@ -104,29 +102,11 @@ while True:
       if len(s) == 0:
         print(f"x{n}EMPTY STACK{n}EDIT COMMAND {nc}")
       else:
-        store.append(int(s[0]))
+        b.append(s[0])
         s.pop(0)
     elif c == "v":
-      s.append(int(store[0]))
-      store.pop(0)
-    elif c == "[":
-      if s[0]==s[1]:
-        s.append(1)
-        s.pop(0)
-        s.pop(0)
-      else:
-        s.append(0)
-        s.pop(0)
-        s.pop(0)
-    elif c == "]":
-      if s[0]!=s[1]:
-        s.append(1)
-        s.pop(0)
-        s.pop(0)
-      else:
-        s.append(0)
-        s.pop(0)
-        s.pop(0)
+      s.append(b[0])
+      b.pop(0)
     elif c == "r":
       b=str(s[0]).replace(str(s[1]), "")
       s.append(b)
@@ -142,3 +122,5 @@ while True:
       out.append(r)
       out.pop(0)
       out.pop(0)
+  if c == "e":
+    break
