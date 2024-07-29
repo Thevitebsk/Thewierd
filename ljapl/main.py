@@ -3,7 +3,6 @@ L       J    A    PPPP L
 L       J   A A   P  P L
 L       J  AAAAA  PPPP L
 LLLL JJJ  A     A P    LLLL
-f4*1-C1C|
 """)
 n="\n"
 while True:
