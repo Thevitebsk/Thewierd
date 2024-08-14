@@ -68,8 +68,6 @@ while True:
       s.append(r)
       s.pop(0)
       s.pop(0)
-    elif c == "?":
-      print(s)
     elif c == "*":
       r=int(s[0])*int(s[1])
       s.append(r)
