@@ -110,8 +110,6 @@ while True:
       s.append(b)
       s.pop(0)
       s.pop(0)
-    elif c == "~":
-      print(s)
     else:
       print(f"x{n}UNKNOWN COMMAND{n}EDIT COMMAND {nc}")
       break
