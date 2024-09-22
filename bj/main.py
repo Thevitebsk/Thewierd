@@ -1,12 +1,12 @@
-at=" ABCDEFGHIJKLMNOPQRSTUVWXYZ";ocm=0;osm=""
+a=" ABCDEFGHIJKLMNOPQRSTUVWXYZ";ocm=0;osm=""
 while True:
- osm="";ocm=0
+ s="";c=0
  for c in input("\n>"):
-  if c == "+":ocm += 1
-  elif c == "-":ocm -= 1
-  elif c == "'":print(at[ocm], end='')
-  elif c == "`":ocm = int(input("CSVAL:"))
-  elif c == "^":osm=ocm;ocm=0
-  elif c == "v":ocm=osm;osm=""
+  if c == "+":c+=1
+  elif c == "-":c-=1
+  elif c == "'":print(a[c], end='')
+  elif c == "`":c=int(input("CSVAL:"))
+  elif c == "^":s=c;c=0
+  elif c == "v":c=s;s=""
   else:print("X");break
-  if ocm < 0 or ocm > 25:ocm = 0
+  if c<0 or c>25:c=0
