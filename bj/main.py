@@ -4,7 +4,7 @@ while True:
  for c in input("\n>"):
   if c=="+":c+=1
   elif c=="-":c-=1
-  elif c=="'":print(a[c],end='')
+  elif c=="'":print(end=a[c])
   elif c=="`":c=int(input("CSVAL:"))
   elif c=="^":s=c;c=0
   elif c=="v":c=s;s=0
