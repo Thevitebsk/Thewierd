@@ -8,5 +8,5 @@ while True:
   elif c=="`":c=int(input("CSVAL:"))
   elif c=="^":s=c;c=0
   elif c=="v":c=s;s=0
-  else:print("X");break
+  else c=="#":break
   if c<0 or c>25:c=0
