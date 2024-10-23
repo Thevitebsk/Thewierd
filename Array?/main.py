@@ -1,5 +1,5 @@
 print("Array?")
-c="""[Hello\, world!]""";p=0;m=0;s=[];ar=[]
+c="""""";p=0;m=0;s=[];ar=[];i="";i=i.split()
 while p<len(c):
  if c[p]=="[" and m==0:m=1
  elif m==1:
@@ -16,5 +16,7 @@ while p<len(c):
  elif c[p]=="∃":
   while c[p]!="∄":
    p+=1
+ elif c[p]=="□":
+  ar.append(i[0]);i.pop(0)
  p+=1
 while len(ar)>0:print(ar[0]);ar.pop(0)
