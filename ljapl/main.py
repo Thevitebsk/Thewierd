@@ -19,4 +19,4 @@ while p!=len(c):
              m=0
          p+=1
  p+=1
-while len(ar)>0:print(ar[0],end="");ar.pop(0)
+while len(ar)>0:print(ar[0]);ar.pop(0)
