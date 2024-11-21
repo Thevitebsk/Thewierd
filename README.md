@@ -2,6 +2,6 @@
 A colection of modified languages made by Thevitebsk
 # Currently made languages and plans on them
 * Branjunk
-** None
+* * None
 * Array?
-** Implement `⌅`
+* * Implement `⌅`
