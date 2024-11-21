@@ -17,5 +17,6 @@ while p<len(c):
  elif c[p]=="∃":
   while c[p]!="∄":p+=1
  elif c[p]=="□":ar.append(input())
+ elif c[p]=="⌅":ar.reverse();ar.append("0" if ar[0]=="0" else "1");ar.reverse();ar.pop(1)
  p+=1
 print("\n".join(ar))
