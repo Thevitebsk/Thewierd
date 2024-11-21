@@ -1,5 +1,5 @@
 print("Array?")
-c="""[Hello\, world!]""";p=0;m=0;s=[];ar=[];i=''
+c="""""";p=0;m=0;s=[];ar=[];i=''
 while p<len(c):
  if c[p]=="[" and m==0:m=1
  elif m==1:
