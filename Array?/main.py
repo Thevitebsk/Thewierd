@@ -14,9 +14,7 @@ while p<len(c):
    while len(s)>1:a=str(s[0])+str(s[1]);s.pop(0);s.pop(0);s.reverse();s.append(a);s.reverse()
    ar.append(s[0].replace("\\",""));s.pop(0)
  elif c[p]=="∃":
-  while c[p]!="∄":
-   p+=1
- elif c[p]=="□":
-  ar.append(i[0]);i.pop(0)
+  while c[p]!="∄":p+=1
+ elif c[p]=="□":ar.append(i.pop(0))
  p+=1
 while len(ar)>0:print(ar[0]);ar.pop(0)
