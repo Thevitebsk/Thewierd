@@ -4,4 +4,4 @@ A colection of modified languages made by Thevitebsk
 * Branjunk
   * None
 * Array?
-  * Implement `⌅`
+  * None
