@@ -1,5 +1,5 @@
 print("Array?")
-c="""""";p=0;m=0;s=[];ar=[];i="";i=i.split()
+c="""□""";p=0;m=0;s=[];ar=[];i=input();i=i.split()
 while p<len(c):
  if c[p]=="[" and m==0:m=1
  elif m==1:
