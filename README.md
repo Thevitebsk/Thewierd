@@ -5,3 +5,4 @@ A colection of modified languages made by Thevitebsk
   * None
 * Array?
   * Make a function definer and caller
+  * Make a path jumper `⊥`
