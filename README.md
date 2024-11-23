@@ -8,4 +8,4 @@ A colection of modified languages made by Thevitebsk
   * Make a path jumper (`⊥`)
   * Make a variable declarator (`=>`)
 * LJAPL
-  * None
+  * Make loops
