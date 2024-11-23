@@ -72,15 +72,6 @@ while True:
     elif c == "_":
       inp=input("input:\n")
       s.append(inp)
-    elif c == "^":
-      if len(s) == 0:
-        print(f"x{n}EMPTY STACK{n}EDIT COMMAND {nc}")
-      else:
-        b.append(s[0])
-        s.pop(0)
-    elif c == "v":
-      s.append(b[0])
-      b.pop(0)
     else:
       print(f"x{n}UNKNOWN COMMAND{n}EDIT COMMAND {nc}")
       break
