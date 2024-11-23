@@ -43,10 +43,7 @@ while True:
     elif c == "N":
       out.append(int(s[0]))
       s.pop(0)
-    elif c == "|":
-      print("output:")
-      print(out[0])
-      break
+    elif c == "|":print("output:",out[0:]sep="\n");break
     elif c == "&":
       r=str(s[0])+str(s[1])
       s.append(r)
@@ -97,10 +94,4 @@ while True:
     else:
       print(f"x{n}UNKNOWN COMMAND{n}EDIT COMMAND {nc}")
       break
-    if len(out) == 2:
-      r=str(out[0])+str(out[1])
-      out.append(r)
-      out.pop(0)
-      out.pop(0)
-  if c == "e":
-    break
+  if c=="e":break
