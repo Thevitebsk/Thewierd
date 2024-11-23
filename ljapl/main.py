@@ -66,11 +66,6 @@ while True:
       s.append(r)
       s.pop(0)
       s.pop(0)
-    elif c == "%":
-      r=int(s[0])%int(s[1])
-      s.append(r)
-      s.pop(0)
-      s.pop(0)
     elif c == ";":
       s.append(s[0])
       s.pop(0)
