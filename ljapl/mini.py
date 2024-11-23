@@ -1,3 +1,4 @@
+#this is a temporary file. it will be moved to main.py after it's finished
 print("""
 L       J    A    PPPP L
 L       J   A A   P  P L
