@@ -81,11 +81,6 @@ while True:
     elif c == "v":
       s.append(b[0])
       b.pop(0)
-    elif c == "r":
-      b=str(s[0]).replace(str(s[1]), "")
-      s.append(b)
-      s.pop(0)
-      s.pop(0)
     else:
       print(f"x{n}UNKNOWN COMMAND{n}EDIT COMMAND {nc}")
       break
