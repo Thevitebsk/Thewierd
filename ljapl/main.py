@@ -2,15 +2,11 @@ print("""
 L       J    A    PPPP L
 L       J   A A   P  P L
 L       J  AAAAA  PPPP L
-LLLL JJJ  A     A P    LLLL
-""")
+LLLL JJJ  A     A P    LLLL""")
 n="\n"
 while True:
-  nc=0
   se=f"0123456789{n} abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\]`|~"
-  s=[]
-  b=[]
-  e=0
+  s=[];nc=0;b=[];e=0
   out=[]
   for c in input("code:\n"):
     nc+=1
