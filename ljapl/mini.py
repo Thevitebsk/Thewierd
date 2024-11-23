@@ -9,7 +9,7 @@ n="\n"
 while True:
   ce=f"0123456789{n} abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\]`|~"
   s=[];nc=0;b=[];e=0;num=[]
-  out=[];inp=input(">>:")
+  out=[];inp=input(">>")
   for _ in range(10):num.append(str(_))
   if inp=="exit":break
   while len(inp)>nc:
@@ -20,7 +20,10 @@ while True:
     elif inp[nc]=="n":out.append(int(s.pop(0)))
     elif inp[nc]=="c":out.append(ce[int(s.pop(0))])
     elif inp[nc]=="*":s.append(int(s.pop(0))*int(s.pop(0)))
+    elif inp[nc]=="=":s.reverse();s.append(s[len(s)-1]);s.reverse()
+    elif inp[nc]==";":s.append(s.pop(0))
     else:print("found an unknown command at",nc+1);break
     nc+=1
   if e==1:
-    while len(out)>0:print(out.pop(0))
+    while len(out)>0:print(out.pop(0),end="")
+    print()
