@@ -35,20 +35,6 @@ while True:
       s.append(8)
     elif c == "9":
       s.append(9)
-    elif c == "a":
-      s.append(10)
-    elif c == "b":
-      s.append(11)
-    elif c == "c":
-      s.append(12)
-    elif c == "d":
-      s.append(13)
-    elif c == "e":
-      s.append(14)
-    elif c == "f":
-      s.append(15)
-    elif c == "g":
-      s.append(16)
     elif c == "C":
       out.append(se[int(s[0])])
       s.pop(0)
