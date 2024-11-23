@@ -35,7 +35,8 @@ while True:
       s.append(8)
     elif c == "9":
       s.append(9)
-    elif c == "a"
+    elif c == "a":
+      s.append(10)
     elif c == "C":
       out.append(se[int(s[0])])
       s.pop(0)
