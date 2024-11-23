@@ -2,77 +2,27 @@ print("""
 L       J    A    PPPP L
 L       J   A A   P  P L
 L       J  AAAAA  PPPP L
-LLLL JJJ  A     A P    LLLL""")
+LLLL JJJ  A     A P    LLLL
+Literally Just A Programing Language""")
 n="\n"
 while True:
-  se=f"0123456789{n} abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\]`|~"
-  s=[];nc=0;b=[];e=0
-  out=[]
-  for c in input("code:\n"):
+  ce=f"0123456789{n} abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\]`|~"
+  s=[];nc=0;b=[];e=0;num=[]
+  out=[];inp=input(">>")
+  for _ in range(10):num.append(str(_))
+  if inp=="exit":break
+  while len(inp)>nc:
+    if inp[nc]=="+":s.append(int(s.pop(0))+int(s.pop(0)))
+    elif inp[nc]in num[0:9]:s.append(int(inp[nc]))
+    elif inp[nc]=="a":s.append(10)
+    elif inp[nc]=="|":e=1;break
+    elif inp[nc]=="n":out.append(int(s.pop(0)))
+    elif inp[nc]=="c":out.append(ce[int(s.pop(0))])
+    elif inp[nc]=="*":s.append(int(s.pop(0))*int(s.pop(0)))
+    elif inp[nc]=="=":s.reverse();s.append(s[len(s)-1]);s.reverse()
+    elif inp[nc]==";":s.append(s.pop(0))
+    else:print("found an unknown command at",nc+1);break
     nc+=1
-    if c == "+":
-      r=int(s[0])+int(s[1])
-      s.append(r)
-      s.pop(0)
-      s.pop(0)
-    elif c == "0":
-      s.append(0)
-    elif c == "1":
-      s.append(1)
-    elif c == "2":
-      s.append(2)
-    elif c == "3":
-      s.append(3)
-    elif c == "4":
-      s.append(4)
-    elif c == "5":
-      s.append(5)
-    elif c == "6":
-      s.append(6)
-    elif c == "7":
-      s.append(7)
-    elif c == "8":
-      s.append(8)
-    elif c == "9":
-      s.append(9)
-    elif c == "a":
-      s.append(10)
-    elif c == "C":
-      out.append(se[int(s[0])])
-      s.pop(0)
-    elif c == "N":
-      out.append(int(s[0]))
-      s.pop(0)
-    elif c == "|":print("output:",out[0:]sep="\n");break
-    elif c == "&":
-      r=str(s[0])+str(s[1])
-      s.append(r)
-      s.pop(0)
-      s.pop(0)
-    elif c == "*":
-      r=int(s[0])*int(s[1])
-      s.append(r)
-      s.pop(0)
-      s.pop(0)
-    elif c == "/":
-      r=int(s[0])/int(s[1])
-      s.append(r)
-      s.pop(0)
-      s.pop(0)
-    elif c == "=":
-      s.append(s[0])
-    elif c == "-":
-      r=int(s[0])-int(s[1])
-      s.append(r)
-      s.pop(0)
-      s.pop(0)
-    elif c == ";":
-      s.append(s[0])
-      s.pop(0)
-    elif c == "_":
-      inp=input("input:\n")
-      s.append(inp)
-    else:
-      print(f"x{n}UNKNOWN COMMAND{n}EDIT COMMAND {nc}")
-      break
-  if c=="e":break
+  if e==1:
+    while len(out)>0:print(out.pop(0),end="")
+    print()
