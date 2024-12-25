@@ -8,6 +8,5 @@ while 1:
   elif c=="`":b=int(input("num:"))
   elif c=="^":m=b;b=0
   elif c=="v":b=m;m=0
-  elif c=="#":b=0
   b=b%26
   if b<0:b=25
