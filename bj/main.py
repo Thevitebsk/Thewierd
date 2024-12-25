@@ -5,7 +5,6 @@ while 1:
   if c=="+":b+=1
   elif c=="-":b-=1
   elif c=="'":print(end=a[b])
-  elif c=="`":b=int(input("num:"))
   elif c=="^":m=b;b=0
   elif c=="v":b=m;m=0
   b=b%26
