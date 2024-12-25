@@ -1,6 +1,6 @@
-a=" ABCDEFGHIJKLMNOPQRSTUVWXYZ";b=0;m=0
-while True:
- m=0;b=0
+a=" ABCDEFGHIJKLMNOPQRSTUVWXYZ";b=m=0
+while 1:
+ m=b=0
  for c in input("\n>"):
   if c=="+":b+=1
   elif c=="-":b-=1
