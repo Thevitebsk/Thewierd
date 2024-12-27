@@ -2,7 +2,7 @@ stack=[];var={}
 out="";code="""
 
 """
-s=0;tr=0;p=0;code=code[1:len(code)-1]
+s=0;tr=0;p=0;code=code[1:-1]
 if code=="":s=1;out+=input()
 while len(code)>p and s==0:
  if len(out)>1023:tr=1;break
