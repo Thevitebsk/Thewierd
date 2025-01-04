@@ -1,6 +1,6 @@
 stack=[];var={}
 out="";code="""
-~i
+
 """
 s=0;tr=0;p=0;code=code[1:len(code)-1]
 if code=="":s=1;out+=input()
