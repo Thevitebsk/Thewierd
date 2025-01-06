@@ -1,9 +1,11 @@
 import sys,time
-y=x=mv=0;st=[];arg=sys.argv[1:];debug=1;s=1;out=""
+y=x=mv=0;st=[];arg=sys.argv[1:];debug=0;s=1;out=""
 while arg:
- if arg[0]=="-d":debug=0
+ if arg[0]=="-d":debug=1
 c="""
-_
+[
+.
+=
 """
 a=c[1:-1].split("\n")
 while 1:
