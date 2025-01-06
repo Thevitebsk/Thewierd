@@ -8,8 +8,8 @@ _
 a=c[1:-1].split("\n")
 while 1:
  if debug==1:print(f"STEP {s}",f"{a[y][x]} {y} {x} {mv}","==================="*2,sep="\n");s+=1;time.sleep(0.5)
- if a[y][x]=="\\":x+=1
- elif a[y][x]=="/":x-=1
+ if a[y][x]=="\\":x+=1;y-=1
+ elif a[y][x]=="/":x-=1;y+=1
  elif a[y][x]=="_":print("".join(s));break
  elif a[y][x]=="=":y=0-1
  elif a[y][x]=="[":st.append(mv)
