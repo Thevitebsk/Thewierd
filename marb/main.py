@@ -7,7 +7,7 @@ _
 """
 a=c[1:-1].split("\n")
 while 1:
- if debug==1:print(f"STEP {s}",f"{a[y][x]} {y} {x} {mv}","==================="*2,sep="\n");s+=1;time.sleep(0.5)
+ if debug==1:print(f"STEP {s}",f"{a[y][x]} {y} {x} {mv}","==================="*2,sep="\n");time.sleep(0.5)
  if a[y][x]=="\\":x+=1;y-=1
  elif a[y][x]=="/":x-=1;y-=1
  elif a[y][x]=="_":print(out);break
@@ -20,6 +20,6 @@ while 1:
   else:x-=1;y-=1
  elif a[y][x]=="?":st.append(input())
  elif a[y][x]==".":out+=str(st.pop())
- if len(out)=="32":print(out);break
- y+=1
+ if s==64:print(out);break
+ y+=1;s+=1
  if y>len(a)-1:print("Your marble has escaped");break
