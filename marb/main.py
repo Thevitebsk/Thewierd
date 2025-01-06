@@ -16,5 +16,4 @@ while 1:
  elif a[y][x]=="+":mv+=1
  elif a[y][x]=="-":mv-=1
  y+=1
- if y>len(a)-1:print("Your marble has escaped");break "+str(stack),"VARIABLES: "+str(var),sep="\n")
-if tr==1:print("TRUNCATED")
+ if y>len(a)-1:print("Your marble has escaped");break
