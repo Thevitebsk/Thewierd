@@ -1,22 +1,21 @@
-stack=[];var={}
-out="";code="""
-
+import sys,time
+y=x=mv=0;st=[];arg=sys.argv[1:];debug=1;s=1
+while arg:
+ if arg[0]=="-d":debug=1
+c="""
+\/
+==
 """
-s=0;tr=0;p=0;code=code[1:len(code)-1]
-if code=="":s=1;out+=input()
-while len(code)>p and s==0:
- if code[p]in list(map(str,range(10))):stack.append(int(code[p]))
- elif code[p]=="•":var[code[p+1]]=stack.pop();p+=1
- elif code[p]==",":
-  try:
-   if code[p+1]in var:stack.append(var[code[p+1]])
-   else:out+=str(stack.pop())
-  except:out+=str(stack.pop())
- elif code[p]=="~":
-  try:var[code[p+1]]=input()
-  except IndexError:stack.append(input())
- if len(out)>1023:tr=1;break
- p+=1
-print("~"*15+" RESULT "+"~"*15)
-print(out,"~"*38,"STACK: "+str(stack),"VARIABLES: "+str(var),sep="\n")
+a=c[1:-1].split("\n")
+while 1:
+ if debug==1:print(f"STEP {s}",f"{a[y][x]} {y} {x} {mv}","==================="*2,sep="\n");s+=1;time.sleep(0.5)
+ if a[y][x]=="\\":x+=1
+ elif a[y][x]=="/":x-=1
+ elif a[y][x]=="_":print("".join(s));break
+ elif a[y][x]=="=":y=0-1
+ elif a[y][x]=="[":st.append(mv)
+ elif a[y][x]=="+":mv+=1
+ elif a[y][x]=="-":mv-=1
+ y+=1
+ if y>len(a)-1:print("Your marble has escaped");break "+str(stack),"VARIABLES: "+str(var),sep="\n")
 if tr==1:print("TRUNCATED")
