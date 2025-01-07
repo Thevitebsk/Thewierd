@@ -8,5 +8,5 @@ A colection of modified languages made by Thevitebsk
   * Make a variable declarator (`=>`)
 * LJAPL
   * Make loops
-* \*t*
+* marb
   * None
