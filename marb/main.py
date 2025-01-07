@@ -22,6 +22,7 @@ while 1:
  elif a[y][x]=="?":
   try:st.append(int(input()))
   except:st.append(-1)
+ elif a[y][x]=="n":...
  elif a[y][x]==".":out+=str(st.pop())
  if s==4096//dd:print(out);break
  y+=1;s+=1
