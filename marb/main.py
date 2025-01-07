@@ -19,7 +19,9 @@ while 1:
  elif a[y][x]=="^":
   if st.pop():x+=1;y-=1
   else:x-=1;y-=1
- elif a[y][x]=="?":st.append(int(input()))
+ elif a[y][x]=="?":
+  try:st.append(int(input()))
+  except:st.append(-1)
  elif a[y][x]==".":out+=str(st.pop())
  if s==4096//dd:print(out);break
  y+=1;s+=1
