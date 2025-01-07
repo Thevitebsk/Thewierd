@@ -1,5 +1,5 @@
 import sys,time
-y=x=mv=0;st=[];arg=sys.argv[1:];debug=1;s=1;out="";dd=1
+y=x=mv=0;st=[];arg=sys.argv[1:];debug=0;s=1;out="";dd=1
 while arg:
  if arg[0]=="-d":debug=1
 if debug:dd=16
