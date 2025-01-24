@@ -1,29 +1,32 @@
-import sys;y=x=mv=0
-st=[];arg=sys.argv[1:];debug=0;s=dd=1;out=""
-while arg:
- if arg[0]=="-d":debug=1
-if debug:dd=16
-c="""
+import sys;y=x=mv=wy=c=0
+st=[];out=""
+code="""
 _
 """
-a=c[1:-1].split("\n")
+a=code[1:-1].split("\n")
 while 1:
- if debug==1:print(f"STEP {s}",f"{a[y][x]} {y} {x} {mv}","==================="*2,sep="\n")
- if a[y][x]=="\\":x+=1;y-=1
- elif a[y][x]=="/":x-=1;y-=1
- elif a[y][x]=="_":print(out);break
- elif a[y][x]=="=":y=0-1
- elif a[y][x]=="[":st.append(mv)
- elif a[y][x]=="+":mv+=1
- elif a[y][x]=="-":mv-=1
- elif a[y][x]=="^":
-  if st.pop():x+=1;y-=1
-  else:x-=1;y-=1
- elif a[y][x]=="?":
-  try:st.append(int(input()))
-  except:st.append(-1)
- elif a[y][x]=="n":...
- elif a[y][x]==".":out+=str(st.pop())
- if s==4096//dd:print(out);break
- y+=1;s+=1
- if y>len(a)-1:print("Your marble has escaped");break
+ try:
+  if a[y][x]=="\\":x+=1;y-=1
+  elif a[y][x]=="/":x-=1;y-=1
+  elif a[y][x]=="_":print(out);break
+  elif a[y][x]=="=":
+    wy=y;y=0
+    while y<len(a):
+     try:
+      if a[y][x]=="_":y=wy;c=1;break
+      else:y+=2
+     except IndexError:y+=2
+    if not c:y=0
+    y+=1
+  elif a[y][x]=="[":st.append(mv)
+  elif a[y][x]=="+":mv+=1
+  elif a[y][x]=="-":mv-=1
+  elif a[y][x]=="^":
+   if st.pop():x+=1;y-=1
+   else:x-=1;y-=1
+  elif a[y][x]=="?":st.append(int(input()))
+  elif a[y][x]==".":out+=str(st.pop())
+  if len(out)==4096*4:print(out);break
+  y+=1
+  if y>len(a)-1:print("Your marble has escaped");break
+ except IndexError:continue
