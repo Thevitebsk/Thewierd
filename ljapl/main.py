@@ -5,7 +5,7 @@ L       J  AAAAA  PPPP L
 LLLL JJJ  A     A P    LLLL
 Literally Just A Programing Language""")
 while True:
-  ce=f"0123456789\n\t abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\\]`|~"
+  ce="0123456789\n\t abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\\]`{|}~"
   s=[];nc=e=0;out=[];inp=input(">>")
   if inp=="exit":break
   while len(inp)>nc:
