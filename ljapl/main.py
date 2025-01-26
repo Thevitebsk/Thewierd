@@ -18,6 +18,11 @@ while True:
     elif inp[nc]=="*":s.append(int(s.pop(0))*int(s.pop(0)))
     elif inp[nc]=="=":s.append(s[-1])
     elif inp[nc]==";":s.append(s.pop(0))
+    elif inp[nc]=="{":
+      if not s:
+        while inp[nc]=="}":nc
+    elif inp[nc]=="}":
+      while inp[nc+1]=="{":p+=1
     else:print("found an unknown command at",nc+1);break
     nc+=1
   if e==1:
