@@ -16,7 +16,7 @@ while True:
     elif inp[nc]=="n":out.append(int(s.pop(0)))
     elif inp[nc]=="c":out.append(ce[int(s.pop(0))])
     elif inp[nc]=="*":s.append(int(s.pop(0))*int(s.pop(0)))
-    elif inp[nc]=="=":s.reverse();s.append(s[len(s)-1]);s.reverse()
+    elif inp[nc]=="=":s.append(s[-1])
     elif inp[nc]==";":s.append(s.pop(0))
     else:print("found an unknown command at",nc+1);break
     nc+=1
