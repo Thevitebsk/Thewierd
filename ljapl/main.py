@@ -23,6 +23,4 @@ while True:
     elif inp[nc]==";":s.append(s.pop(0))
     else:print("found an unknown command at",nc+1);break
     nc+=1
-  if e==1:
-    while len(out)>0:print(out.pop(0),end="")
-    print()
+  if e==1:print("".join(str(out))+"\n")
