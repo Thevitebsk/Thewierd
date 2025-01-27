@@ -7,6 +7,6 @@ A colection of modified languages made by Thevitebsk
   * Make a function definer and caller
   * Make a variable declarator (`=>`)
 * LJAPL
-  * Make loops
+  * None
 * marb
    * None
