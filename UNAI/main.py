@@ -16,4 +16,4 @@ while len(code)>point:
         stack.append("".join(tempstack));tempstack.clear()
     elif code[point]=="#":stack.pop()
     point+=1
-if force==0:print(" ".join(stack))
+if force==0:print("\n".join(stack))
