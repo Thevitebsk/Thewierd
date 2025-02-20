@@ -14,7 +14,7 @@ while 1:
      try:
       if a[y][x]=="_":y=wy;c=1;break
       else:y+=2
-     except IndexError:y+=2
+     except IndexError:break
     if not c:y=0
     y+=1
   elif a[y][x]=="[":st.append(mv)
