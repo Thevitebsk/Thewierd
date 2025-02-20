@@ -1,9 +1,8 @@
-import sys;y=x=mv=wy=c=0
-st=[];out=""
+y=x=mv=wy=c=0;st=[];out=""
 code="""
 _
 """
-a=code[1:-1].split("\n")
+a=code.strip().split("\n")
 while 1:
  try:
   if a[y][x]=="\\":x+=1;y-=1
