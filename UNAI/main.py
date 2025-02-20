@@ -17,5 +17,6 @@ while len(code)>point:
     elif code[point]=="#":stack.pop()
     elif code[point]=="$":stack.append(stack.pop(len(stack)-2))
     elif code[point]==",":stack.append(input())
+    elif code[point]=="[":point=code.index("]",point)
     point+=1
 if force==0:print("\n".join(stack))
