@@ -14,8 +14,7 @@ while len(code)>point:
         point+=1
         while code[point]!="\"":tempstack.append(code[point]);point+=1
         stack.append("".join(tempstack));tempstack.clear()
-    elif code[point]=="#":stack.pop()
-    elif code[point]=="$":stack.append(stack.pop(len(stack)-2))
+    elif code[point]=="^":stack.pop()
     elif code[point]==",":stack.append(input())
     elif code[point]=="[":point=code.index("]",point)
     point+=1
