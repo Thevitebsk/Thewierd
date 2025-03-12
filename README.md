@@ -1,5 +1,5 @@
 # Thewierd
-A colection of modified languages made by Thevitebsk
+A colection of languages made by Thevitebsk (or Gaham)
 # Currently made languages and plans on them
 * Branjunk
   * None
