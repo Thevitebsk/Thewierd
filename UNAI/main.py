@@ -5,7 +5,7 @@ def push_int():
     while 1:
      if p+1>len(c):break
      ts.append(c[p]);p+=1
-     if c[p]not in list(map(str,range(10))):p-=1;break
+     if c[p]not in"0123456789":p-=1;break
     while ts[0]=="0":ts.pop(0)
     s.append("".join(ts));ts.clear()
 while len(c)>p:
