@@ -19,4 +19,4 @@ while len(c)>p:
     elif c[p]==",":s.append(input())
     elif c[p]=="[":p=c.index("]",p)
     p+=1
-if io==0:print("\n".join(s).strip())
+if io==0:print("\n".join(s))
