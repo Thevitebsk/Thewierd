@@ -17,6 +17,6 @@ while len(c)>p:
         s.append("".join(ts));ts.clear()
     elif c[p]=="^":s.pop()
     elif c[p]==",":s.append(input())
-    elif c[p]=="[":p=c.index("]",p)
+    elif c[p]=="]":p=c.index("\n",p)
     p+=1
 if io==0:print("\n".join(s))
