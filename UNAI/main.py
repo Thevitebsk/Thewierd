@@ -1,12 +1,7 @@
 # --UNAI-- #
 import sys
-if sys.argv[0]!=["py","python","python3"]:
- try:c=input()
- except:print("Activated TIO mode.\nPlease use the input box bellow");exit()
- else:print("Activated TIO mode.")
-else:
- try:c=open(sys.argv[1]).read()
- except:print(f"Usage: py {__file__.split(chr(0x5c))[-1]} \"(file name)\"");exit()
+try:c=open(sys.argv[1]).read()
+except:print(f"Usage: py {__file__.split(chr(0x5c))[-1]} \"(file name)\"");exit()
 s=[];ts=[];p=io=0
 def push_int():
     global p
