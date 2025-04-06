@@ -1,5 +1,8 @@
 # --UNAI-- #
-s=[];ts=[];p=io=0;c=input()
+import sys
+try:c=open(sys.argv[1]).read()
+except:print(f"Usage: py {__file__.split(chr(0x5c))[-1]} \"(file name)\"");exit()
+s=[];ts=[];p=io=0
 def push_int():
     global p
     while 1:
